@@ -101,7 +101,7 @@ Chúng ta có `psa = pow(2, p - 0xcafebabe, n)`
 Có `p` thì chúng ta tính toán `q`. Done!
 
 #   ECB - 200 point
-Tính chất của ECB mode là kiểu 1-1 tức 2 block giống nhau, nhưng khác bị trí nhưng đều cho cùng cipher. Thế nên nếu 2 bức ảnh được encode theo ECB mode mà mỗi pixel là một block thì cho ta tần số xuất hiện của các pixel có cùng giá trị sẽ lớn. Thử code với bức đầu thấy có một số pixel có tần số xuất hiện rất nhiều khác biệt so với các pixel còn lại, tô màu chúng cho thành màu đen còn các pixel khác cho màu trắng, bức thứ 2 cũng vậy. Kết hợp 2 bức hình lại thu được flag
+Tính chất của AES-ECB mode là kiểu 1-1 tức 2 block giống nhau, nhưng khác vị trí nhưng đều cho cùng cipher. Thế nên nếu 2 bức ảnh được encode theo AES-ECB mode mà mỗi pixel là một block thì cho ta tần số xuất hiện của các pixel có cùng giá trị sẽ lớn. Thử kiểm tra với bức đầu thấy có một số pixel có tần số xuất hiện rất nhiều khác biệt so với các pixel còn lại, tô màu chúng cho thành màu đen còn các pixel khác cho màu trắng, bức thứ 2 cũng vậy. Kết hợp 2 bức hình lại thu được flag
 
 #   Attack in 2017 - 300 point
 Là một lỗ hổng của thuật toán RSA tên ROCA phát hiện vào năm 2017(mình nhầm :D). Tool attack [roca](https://github.com/udan11/roca). Lời giải chi tiết trong file Solution.pdf
