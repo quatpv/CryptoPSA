@@ -85,5 +85,4 @@ cd /etc/cron.d/;
 echo -e "SHELL=/bin/sh" > $CTF_NAME;
 echo -e "PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin" >> $CTF_NAME;
 echo -e "@reboot   root    /home/CTFd/CTFd/start.sh" >> $CTF_NAME;
-reboot;
 #Please allow up to 10 minutes after reboot to allow nginx, uwsgi, and CTFd to initialise for the first time.
